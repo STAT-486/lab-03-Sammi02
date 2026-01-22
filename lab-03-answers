@@ -1,52 +1,52 @@
 ANSWERS
 
 (2)
-(c) Training MSE: XXXX
-(d) Test MSE: XXXX 
-(e) Your answer: XXXX
+(c) Training MSE: 1.535095636242088
+(d) Test MSE: 1.75433086109485 
+(e) Your answer: The test MSE is smaller than the variance of y_test. This shows that the model explains a lot of the variability in the response variable. The model has reasonable predictive power. 
 
 
 (3)
 (b) 
-Feature 1: XXXX (coef: XXXX)
-Feature 2: XXXX (coef: XXXX)
-Feature 3: XXXX (coef: XXXX)
+Feature 1: Salnty Depthm (coef: 147.569766)
+Feature 2: Salnty Dry_T (coef: 35.153778)
+Feature 3: Salnty O2ml_L (coef: 32.217666)
 
 (c) 
-Feature 1: XXXX (coef: XXXX)
-Feature 2: XXXX (coef: XXXX)
-Feature 3: XXXX (coef: XXXX)
+Feature 1: Depthm (coef: -146.550613)
+Feature 2: O2ml_L (coef: -37.244657)
+Feature 3: Dry_T (coef: -34.383804)
 
-(d) y-intercept: XXXX 
+(d) y-intercept: 11.607865265528682 
 
 (4) 
 (c1) Best hyperparameters: 
-* strategy: XXXX
-* poly degree: XXXX
-* n neighbors: XXXX
-* weight: XXXX
-(c2) Best MSE: XXXX
-(d) Time: XXXX
-(f) test MSE: XXXX 
-(g) Your answer: XXXX
+* strategy: median
+* poly degree: 3
+* n neighbors: 10
+* weight: distance
+(c2) Best MSE: 1.1942865460094276
+(d) Time: 83.12749290466309
+(f) test MSE: 1.2398437245052845 
+(g) Your answer: The test MSE is lower in this model, therefore this is the better pipeline than the linear regression. It has better predictive performance for water temperature. 
 
 (5) - (Repeat of (4) with RandomizedGridSearch)
 (c1) Best hyperparameters: 
-* strategy: XXXX
-* poly degree: XXXX
-* n neighbors: XXXX
-* weight: XXXX
-(c2) Best MSE: XXXX
-(d) Time: XXXX
-(f) test MSE: XXXX 
-(g) Your answer: XXXX
-(h) Your answer: XXXX
+* strategy: mean
+* poly degree: 3
+* n neighbors: 10
+* weight: uniform
+(c2) Best MSE: 1.2832593203192033
+(d) Time: 13.211056232452393
+(f) test MSE: 1.3121145795554305 
+(g) Your answer: When using Randomized Search, we had a lower test MSE than the pipeline from part 2. This shows that it improved predictive performance for water temperature. 
+(h) Your answer: Grid Search had a slightly better model with a lower test MSE, but it required much more time to compute. Randomized Search was much faster and had a MSE pretty close to the Grid Search. This demonstrates a trade off.
 
 (6) 
-(b1) Training MSE: XXXX
-(b2) Test MSE: XXXX 
-(c) Your answer: XXXX
+(b1) Training MSE: 7.21400727093023e-13
+(b2) Test MSE: 1.4623776711365377 
+(c) Your answer: When including extra variables, it does not improve preditive performance. The test MSE is a little bit higher than the pipeline that only uses numerical variables. This shows that the predictive power comes from the numerical variables. 
 
 (7) 
-(b) Your answer: XXXX
+(b) Your answer: One think that I learned about with pipelines is that you can do a DecisionTreeRegressor. This can find complex nonlinear relationships in your data. This is a really cool tool that you can use that I had no idea about!
 
